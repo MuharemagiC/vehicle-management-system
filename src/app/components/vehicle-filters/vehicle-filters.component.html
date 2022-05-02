@@ -1,0 +1,65 @@
+<section class="another-filters">
+  <app-base-button
+    [imgUrl]="'assets/images/Arrowback.svg'"
+    [buttonText]="'Dodatni filteri'"
+    [className]="showFilters ? 'filter-class' : 'filter-button'"
+    [imgClassName]="showFilters ? 'icon-white icon-up' : 'icon-white icon-down'"
+    (btnClick)="toggleFilters()"
+  ></app-base-button>
+  <form *ngIf="showFilters" class="filters" [formGroup]="filterForm">
+    <input
+      class="input"
+      type="number"
+      placeholder="Nabavna cijena"
+      autocomplete="off"
+      min="1"
+      formControlName="vehiclePrice"
+    />
+    <input
+      class="input"
+      type="text"
+      placeholder="Registriran do"
+      autocomplete="off"
+      onfocus="(this.type='date')"
+      onblur="(this.value == '' ? this.type='text' : this.type='date')"
+      formControlName="registeredUntil"
+    />
+    <input
+      class="input"
+      type="text"
+      placeholder="Naredni servis"
+      autocomplete="off"
+      onfocus="(this.type='date')"
+      onblur="(this.value == '' ? this.type='text' : this.type='date')"
+      formControlName="nextService"
+    />
+    <input
+      class="input"
+      type="number"
+      min="1900"
+      max="2099"
+      step="1"
+      placeholder="Godina proizvodnje"
+      formControlName="manufactureYear"
+    />
+    <select class="input" formControlName="insuranceName">
+      <option value="" disabled selected hidden>Osiguranje</option>
+      <option value="Triglav">Triglav</option>
+      <option value="ASA">ASA</option>
+      <option value="Drina">Drina</option>
+      <option value="Wiener">Wiener</option>
+    </select>
+    <app-base-button
+      (btnClick)="onSubmit()"
+      [imgUrl]="'assets/images/Search.svg'"
+      [className]="'login-button'"
+      [imgClassName]="'icon-white'"
+    ></app-base-button>
+    <app-base-button
+      (btnClick)="clearFilters()"
+      [imgUrl]="'assets/images/Close.svg'"
+      [className]="'login-button'"
+      [imgClassName]="'icon-white'"
+    ></app-base-button>
+  </form>
+</section>

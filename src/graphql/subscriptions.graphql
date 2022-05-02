@@ -1,0 +1,79 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateVehicle {
+  onCreateVehicle {
+    id
+    vehicleName
+    vehicleBrand
+    chassisNumber
+    registrationNumber
+    indebtedUnit
+    vehicleType
+    vehiclePrice
+    manufactureYear
+    carMileage
+    acc
+    nextService
+    servicePrice
+    registeredBy
+    registeredUntil
+    registrationPrice
+    insuranceName
+    insuranceType
+    insuranceBy
+    insuranceUntil
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateVehicle {
+  onUpdateVehicle {
+    id
+    vehicleName
+    vehicleBrand
+    chassisNumber
+    registrationNumber
+    indebtedUnit
+    vehicleType
+    vehiclePrice
+    manufactureYear
+    carMileage
+    acc
+    nextService
+    servicePrice
+    registeredBy
+    registeredUntil
+    registrationPrice
+    insuranceName
+    insuranceType
+    insuranceBy
+    insuranceUntil
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteVehicle {
+  onDeleteVehicle {
+    id
+    vehicleName
+    vehicleBrand
+    chassisNumber
+    registrationNumber
+    indebtedUnit
+    vehicleType
+    vehiclePrice
+    manufactureYear
+    carMileage
+    acc
+    nextService
+    servicePrice
+    registeredBy
+    registeredUntil
+    registrationPrice
+    insuranceName
+    insuranceType
+    insuranceBy
+    insuranceUntil
+    createdAt
+    updatedAt
+  }
+}

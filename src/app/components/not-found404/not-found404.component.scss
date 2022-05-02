@@ -1,0 +1,26 @@
+.wrapper-404 {
+  background: #f6faff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-404 {
+  font-size: 100px;
+  margin: 30px;
+}
+
+.text-oops {
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.text {
+  font-size: 28px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,62 @@
+<nav class="nav">
+  <section *ngIf="isVehiclePage" class="navigation-buttons">
+    <app-base-button
+      routerLink="/dashboard"
+      [buttonText]="'Vozila'"
+      [className]="'tab-button'"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="button-white"
+    ></app-base-button>
+    <app-base-button
+      routerLink="/dashboard/auction"
+      [buttonText]="'Licitacija'"
+      [className]="'tab-button'"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLinkActive]="'button-white'"
+    ></app-base-button>
+  </section>
+</nav>
+<section class="nav-section">
+  <section class="icon-section">
+    <img
+      class="icon-gray"
+      src="assets/images/Notificationsnone.svg"
+      alt="Notification icon"
+    />
+  </section>
+  <section class="icon-section">
+    <img
+      class="icon-gray"
+      src="assets/images/Tunehorizontal.svg"
+      alt="Tune horizontal icon"
+    />
+  </section>
+  <section class="icon-section" (click)="signOut()">
+    <img
+      class="icon-gray"
+      src="assets/images/Accountcircle.svg"
+      alt="Account icon"
+    />
+  </section>
+</section>
+<aside class="aside">
+  <section class="aside-buttons" routerLink="/dashboard">
+    <img
+      src="assets/images/Car.svg"
+      alt="Car icon"
+      [routerLinkActiveOptions]="{ exact: isVehiclePage ? false : true }"
+      class="icon-gray"
+      routerLinkActive="icon-white"
+    />
+  </section>
+  <section class="divider"></section>
+  <section class="aside-buttons" routerLink="/dashboard/analytics">
+    <img
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="icon-gray"
+      routerLinkActive="icon-white"
+      src="assets/images/Piechart.svg"
+      alt="Piechart icon"
+    />
+  </section>
+</aside>

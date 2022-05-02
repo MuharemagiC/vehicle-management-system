@@ -1,0 +1,11 @@
+<form class="search-bar" [formGroup]="searchBarForm">
+  <input
+    type="text"
+    placeholder="Unesite vozilo"
+    formControlName="vehicleName"
+    autocomplete="off"
+  />
+  <span class="search-actions" (click)="onSubmit()">
+    <img src="assets/images/Search.svg" alt="Search icon" class="icon-gray" />
+  </span>
+</form>

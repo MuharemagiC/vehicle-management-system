@@ -1,0 +1,27 @@
+<mat-dialog-content [ngClass]="isDeleteDialog ? '' : 'dialog-wrapper'">
+  <section *ngIf="!isDeleteDialog">
+    <app-vehicle-form [id]="id"></app-vehicle-form>
+    <button class="close-button" mat-button mat-dialog-close>
+      <img class="icon-white" src="assets/images/Close.svg" alt="Close icon" />
+    </button>
+  </section>
+  <section *ngIf="isDeleteDialog" class="delete-dialog__content">
+    <img src="assets/images/Warnning.svg" alt="Warnning icon" />
+    <h1 class="text">Budite pažljivi</h1>
+    <p class="text text-center">
+      Jeste li sigurni da želite nastaviti? Ovu akciju nije moguće poništiti.
+    </p>
+    <section class="delete-dialog__buttons">
+      <app-base-button
+        [buttonText]="'Ne'"
+        [className]="'login-button'"
+        mat-dialog-close
+      ></app-base-button>
+      <app-base-button
+        [buttonText]="'Da'"
+        [className]="'disabled'"
+        (btnClick)="onDeleteVehicle()"
+      ></app-base-button>
+    </section>
+  </section>
+</mat-dialog-content>

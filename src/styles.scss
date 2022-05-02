@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@aws-amplify/ui-angular/theme.css";
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  overflow-x: hidden;
+}
+
+.color-gray {
+  color: #555a66;
+}
+
+.color-black {
+  color: #122218;
+}
+
+.font-exo__2 {
+  font-family: "Exo 2", sans-serif;
+}
+
+.font-size__24 {
+  font-size: 24px;
+}
+
+.font-size__14 {
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.margin-top__50 {
+  margin-top: 50px;
+}
+
+.margin-top__20 {
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.margin-right__8 {
+  margin-right: 8px;
+}
+
+.default-dialog .mat-dialog-container {
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
+.delete-dialog .mat-dialog-container {
+  background: #ffffff !important;
+  border-radius: 24px !important;
+}
+
+.empty-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+  display: flex;
+  letter-spacing: 0.1px;
+  color: #000000;
+}

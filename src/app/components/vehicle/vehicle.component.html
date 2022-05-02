@@ -1,0 +1,22 @@
+<section class="main">
+  <section class="filters">
+    <section class="search-bar">
+      <app-search-bar></app-search-bar>
+      <app-select></app-select>
+    </section>
+    <app-vehicle-filters></app-vehicle-filters>
+  </section>
+  <section [ngClass]="showFilters ? 'table-wrapper' : 'table-wrapper-second'">
+    <app-table></app-table>
+  </section>
+  <section class="add-button">
+    <app-base-button
+      type="submit"
+      [imgUrl]="'assets/images/Add.svg'"
+      [buttonText]="'Dodaj vozilo'"
+      [className]="'login-button'"
+      [imgClassName]="'icon-white margin-right__8'"
+      (btnClick)="openAddDialog()"
+    ></app-base-button>
+  </section>
+</section>

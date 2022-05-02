@@ -1,0 +1,14 @@
+.page-content {
+  float: left;
+  margin-left: 80px;
+  margin-top: 80px;
+  min-width: calc(100% - 80px);
+  min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    min-width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+}

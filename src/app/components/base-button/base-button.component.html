@@ -1,0 +1,17 @@
+<button
+  mat-button
+  [class]="className"
+  [disabled]="disabled"
+  [routerLinkActive]="routerLinkActive"
+  [routerLinkActiveOptions]="routerLinkActiveOptions"
+  (click)="onClick()"
+>
+  <img
+    *ngIf="imgUrl"
+    [src]="imgUrl"
+    alt="button image"
+    [class]="imgClassName"
+  />
+
+  <span [ngClass]="imgUrl === '' ? '' : 'text-button'">{{ buttonText }}</span>
+</button>

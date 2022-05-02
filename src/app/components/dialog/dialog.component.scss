@@ -1,0 +1,34 @@
+.dialog-wrapper {
+  min-height: 100vh;
+}
+
+.close-button {
+  width: 64px;
+  height: 64px;
+  background: #c00038;
+  position: absolute;
+  top: 0;
+  left: calc(100% - 50% - 64px);
+  border-radius: 8px 0px 0px 8px;
+  z-index: 100;
+}
+
+.icon-white {
+  filter: invert(98%) sepia(7%) saturate(42%) hue-rotate(227deg)
+    brightness(105%) contrast(100%);
+}
+
+.text {
+  color: black;
+}
+
+.delete-dialog__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.delete-dialog__buttons {
+  margin: 15px;
+}

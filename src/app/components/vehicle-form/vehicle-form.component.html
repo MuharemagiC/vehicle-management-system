@@ -1,0 +1,253 @@
+<section>
+  <h1 class="title">{{ id ? "Uredi vozilo" : "Dodaj vozilo" }}</h1>
+  <form
+    class="example-form card-content"
+    [formGroup]="vehicleForm"
+    (submit)="submitForm($event)"
+  >
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Naziv vozila</legend>
+        <input
+          class="input"
+          type="text"
+          autocomplete="off"
+          placeholder="Unesite naziv vozila"
+          formControlName="vehicleName"
+        />
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">Marka vozila</legend>
+        <select class="input" formControlName="vehicleBrand">
+          <option value="" disabled selected hidden>
+            Odaberite marku vozila
+          </option>
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Citroen">Citroen</option>
+          <option value="Ford">Ford</option>
+          <option value="Honda">Honda</option>
+          <option value="Jaguar">Jaguar</option>
+          <option value="Land Rover">Land Rover</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Mini">Mini</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Volvo">Volvo</option>
+        </select>
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Broj šasije</legend>
+        <input
+          class="input"
+          type="text"
+          autocomplete="off"
+          formControlName="chassisNumber"
+        />
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">Broj registracije</legend>
+        <input
+          class="input"
+          type="text"
+          autocomplete="off"
+          formControlName="registrationNumber"
+        />
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Zadužena jedinica</legend>
+        <select class="input" formControlName="indebtedUnit">
+          <option value="" disabled selected hidden>Odaberite jedinicu</option>
+          <option value="Zadužena jedinica Sarajevo">
+            Zadužena jedinica Sarajevo
+          </option>
+          <option value="Zadužena jedinica Tuzla">
+            Zadužena jedinica Tuzla
+          </option>
+          <option value="Zadužena Mosta">Zadužena Mostar</option>
+          <option value="Zadužena jedinica Banja Luka">
+            Zadužena jedinica Banja Luka
+          </option>
+        </select>
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">Tip vozila</legend>
+        <select class="input" formControlName="vehicleType">
+          <option value="" disabled selected hidden>Odaberite tip</option>
+          <option value="Putničko">Putničko</option>
+          <option value="Motocikl">Motocikl</option>
+          <option value="Kombi vozilo">Kombi vozilo</option>
+          <option value="Terensko vozilo">Terensko vozilo</option>
+        </select>
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Kupovna cijena</legend>
+        <input
+          class="input"
+          type="number"
+          autocomplete="off"
+          min="1"
+          formControlName="vehiclePrice"
+        />
+        <label class="label">KM</label>
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">Godina proizvodnje</legend>
+        <input
+          class="input"
+          type="number"
+          min="1900"
+          max="2099"
+          step="1"
+          value="2021"
+          formControlName="manufactureYear"
+        />
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Kilometraža</legend>
+        <input
+          class="input"
+          type="number"
+          min="1"
+          autocomplete="off"
+          formControlName="carMileage"
+        />
+        <label class="label">km</label>
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">ACC</legend>
+        <select class="input" formControlName="acc">
+          <option value="" disabled selected hidden>Odaberite</option>
+          <option value="ACC 1">ACC 1</option>
+          <option value="ACC 2">ACC 2</option>
+          <option value="ACC 3">ACC 3</option>
+          <option value="ACC 4">ACC 4</option>
+        </select>
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field three">
+        <legend class="legend">Naredni servis</legend>
+        <input
+          class="input"
+          type="date"
+          autocomplete="off"
+          formControlName="nextService"
+        />
+      </fieldset>
+      <fieldset class="login-form-field three">
+        <legend class="legend">Ukupni trosak servisa</legend>
+        <input
+          class="input"
+          type="number"
+          autocomplete="off"
+          min="1"
+          formControlName="servicePrice"
+        />
+        <label class="label">KM</label>
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field three">
+        <legend class="legend">Registrovan od</legend>
+        <input
+          class="input"
+          type="date"
+          autocomplete="off"
+          formControlName="registeredBy"
+        />
+      </fieldset>
+      <fieldset class="login-form-field three">
+        <legend class="legend">Registrovan do</legend>
+        <input
+          class="input"
+          type="date"
+          autocomplete="off"
+          formControlName="registeredUntil"
+        />
+      </fieldset>
+      <fieldset class="login-form-field three">
+        <legend class="legend">Cijena registracije</legend>
+        <input
+          class="input"
+          min="1"
+          type="number"
+          autocomplete="off"
+          formControlName="registrationPrice"
+        />
+        <label class="label">KM</label>
+      </fieldset>
+    </section>
+
+    <h2 class="title">Podaci o osiguranju</h2>
+
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Osiguravajuća kuća</legend>
+        <select class="input" formControlName="insuranceName">
+          <option value="" disabled selected hidden>Odaberite</option>
+          <option value="Triglav">Triglav</option>
+          <option value="ASA">ASA</option>
+          <option value="Drina">Drina</option>
+          <option value="Wiener">Wiener</option>
+        </select>
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">Vrsta osiguranja</legend>
+        <select class="input" formControlName="insuranceType">
+          <option value="" disabled selected hidden>Odaberite</option>
+          <option value="Osiguranje 1">Osiguranje 1</option>
+          <option value="Osiguranje 2">Osiguranje 2</option>
+          <option value="Osiguranje 3">Osiguranje 3</option>
+          <option value="Osiguranje 4">Osiguranje 4</option>
+        </select>
+      </fieldset>
+    </section>
+
+    <section class="input-section">
+      <fieldset class="login-form-field">
+        <legend class="legend">Osiguranje ugovoreno</legend>
+        <input
+          class="input"
+          type="date"
+          autocomplete="off"
+          formControlName="insuranceBy"
+        />
+      </fieldset>
+      <fieldset class="login-form-field">
+        <legend class="legend">Osiguranje ističe</legend>
+        <input
+          class="input"
+          type="date"
+          autocomplete="off"
+          formControlName="insuranceUntil"
+        />
+      </fieldset>
+    </section>
+
+    <section class="submit-button">
+      <app-base-button
+        type="submit"
+        [imgUrl]="'assets/images/Add.svg'"
+        [buttonText]="id ? 'Uredi vozilo' : 'Dodaj vozilo'"
+        [className]="'login-button button-end'"
+        [imgClassName]="'icon-white margin-right__8'"
+        [disabled]="vehicleForm.invalid"
+      ></app-base-button>
+    </section>
+  </form>
+</section>

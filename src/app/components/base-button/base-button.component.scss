@@ -1,0 +1,104 @@
+.login-button {
+  background-color: #122218;
+  font-family: "Exo 2", sans-serif;
+  color: #fff !important;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.filter-button {
+  @extend .login-button;
+  height: 48px;
+  width: 156px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    order: 2;
+  }
+}
+
+.icon-white {
+  filter: invert(98%) sepia(7%) saturate(42%) hue-rotate(227deg)
+    brightness(105%) contrast(100%);
+}
+
+.icon-up {
+  transition: 0.3s ease;
+  transform: rotateZ(90deg);
+}
+
+.icon-down {
+  order: 1;
+  transition: 0.3s ease;
+  transform: rotateZ(-90deg);
+}
+
+.mat-button-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.button-text {
+  margin-left: 10px;
+  align-self: flex-end;
+}
+
+.tab-button {
+  width: 139px;
+  height: 48px;
+  background: #b6b6b6;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #383b43;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.button-white {
+  background: #ffffff;
+  order: 1;
+}
+
+.filter-class {
+  @extend .login-button;
+  height: 58px;
+  width: 156px;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-end {
+  margin: 10px 0px;
+}
+
+[disabled] {
+  background: rgba(27, 27, 31, 0.12);
+  color: #1b1b1e;
+  filter: invert(81%) sepia(57%) saturate(0%) hue-rotate(148deg) brightness(80%)
+    contrast(94%);
+}
+
+.disabled {
+  @extend .login-button;
+  background: rgba(27, 27, 31, 0.12);
+  color: #1b1b1e !important;
+  margin-left: 15px;
+}
+
+@media (max-width: 560px) {
+  .tab-button {
+    width: 80px;
+  }
+}

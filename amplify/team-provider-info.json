@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vehicleapi-dev-94327-authRole",
+      "UnauthRoleArn": "arn:aws:iam::102708205619:role/amplify-vehicleapi-dev-94327-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::102708205619:role/amplify-vehicleapi-dev-94327-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-vehicleapi-dev-94327-deployment",
+      "UnauthRoleName": "amplify-vehicleapi-dev-94327-unauthRole",
+      "StackName": "amplify-vehicleapi-dev-94327",
+      "StackId": "arn:aws:cloudformation:eu-central-1:102708205619:stack/amplify-vehicleapi-dev-94327/694e32c0-c46b-11ec-8f90-02304bec7f0e",
+      "AmplifyAppId": "d43768fcflm0m"
+    },
+    "categories": {
+      "auth": {
+        "vehicleapi54e6c195": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<form
+  [formGroup]="signInForm"
+  (ngSubmit)="onSubmit($event)"
+  class="example-form card-content"
+>
+  <section class="login-form-field">
+    <span>
+      <img
+        src="assets/images/Mailoutline.svg"
+        alt="Mail outlined icon"
+        class="icon-gray"
+      />
+    </span>
+    <input
+      type="email"
+      placeholder="e-mail"
+      autocomplete="off"
+      formControlName="email"
+    />
+  </section>
+  <mat-error *ngIf="email?.invalid && email?.touched" class="error-validation">
+    Email is not correct. Try again
+  </mat-error>
+  <section class="login-form-field">
+    <span>
+      <img src="assets/images/Lock.svg" alt="Lock icon" class="icon-gray" />
+    </span>
+    <input
+      type="password"
+      placeholder="password"
+      autocomplete="off"
+      formControlName="password"
+    />
+  </section>
+  <mat-error
+    *ngIf="password?.invalid && password?.touched"
+    class="error-validation"
+  >
+    Password is not correct. Try again
+  </mat-error>
+  <mat-error *ngIf="errorMessage" class="error-response">
+    {{ errorMessage }}
+  </mat-error>
+  <section class="submit-button">
+    <app-base-button
+      type="submit"
+      [imgUrl]="'assets/images/Unlock.svg'"
+      [buttonText]="'Prijavi se'"
+      [className]="'login-button'"
+      [imgClassName]="'icon-white'"
+      [disabled]="signInForm.invalid"
+    ></app-base-button>
+    <mat-spinner *ngIf="loading" diameter="35" class="loader"></mat-spinner>
+  </section>
+</form>

@@ -1,0 +1,88 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateVehicle(
+  $input: CreateVehicleInput!
+  $condition: ModelVehicleConditionInput
+) {
+  createVehicle(input: $input, condition: $condition) {
+    id
+    vehicleName
+    vehicleBrand
+    chassisNumber
+    registrationNumber
+    indebtedUnit
+    vehicleType
+    vehiclePrice
+    manufactureYear
+    carMileage
+    acc
+    nextService
+    servicePrice
+    registeredBy
+    registeredUntil
+    registrationPrice
+    insuranceName
+    insuranceType
+    insuranceBy
+    insuranceUntil
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateVehicle(
+  $input: UpdateVehicleInput!
+  $condition: ModelVehicleConditionInput
+) {
+  updateVehicle(input: $input, condition: $condition) {
+    id
+    vehicleName
+    vehicleBrand
+    chassisNumber
+    registrationNumber
+    indebtedUnit
+    vehicleType
+    vehiclePrice
+    manufactureYear
+    carMileage
+    acc
+    nextService
+    servicePrice
+    registeredBy
+    registeredUntil
+    registrationPrice
+    insuranceName
+    insuranceType
+    insuranceBy
+    insuranceUntil
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteVehicle(
+  $input: DeleteVehicleInput!
+  $condition: ModelVehicleConditionInput
+) {
+  deleteVehicle(input: $input, condition: $condition) {
+    id
+    vehicleName
+    vehicleBrand
+    chassisNumber
+    registrationNumber
+    indebtedUnit
+    vehicleType
+    vehiclePrice
+    manufactureYear
+    carMileage
+    acc
+    nextService
+    servicePrice
+    registeredBy
+    registeredUntil
+    registrationPrice
+    insuranceName
+    insuranceType
+    insuranceBy
+    insuranceUntil
+    createdAt
+    updatedAt
+  }
+}

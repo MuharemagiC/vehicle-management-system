@@ -1,0 +1,56 @@
+.another-filters {
+  margin-top: 15px;
+}
+
+.input {
+  margin-top: 5px;
+  height: 48px;
+  margin-left: 8px;
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  border: 1px solid #b6b6b6;
+  width: 100%;
+  outline: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+  background: #2f493f;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.input::placeholder {
+  color: #ffffff;
+}
+
+.filters {
+  position: absolute;
+  display: flex;
+  right: 0;
+  width: calc(100% - 110px);
+  padding: 15px;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  background: #122218;
+  margin-right: 15px;
+  border-radius: 16px 0px 16px 16px;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background-image: url("../../../assets/images/Today.svg");
+  filter: invert(98%) sepia(7%) saturate(42%) hue-rotate(227deg)
+    brightness(105%) contrast(100%);
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    width: calc(100% - 90px);
+  }
+}

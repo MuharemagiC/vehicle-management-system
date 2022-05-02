@@ -1,0 +1,51 @@
+.mat-table {
+  width: 100%;
+  background: white;
+  thead {
+    background: #edf3ef;
+  }
+}
+
+.mat-cell {
+  color: #383b43;
+  background: #ffffff;
+  border-bottom: 1px solid #edf3ef;
+  text-align: center;
+}
+
+.mat-header-cell {
+  background: #edf3ef;
+  color: #122218;
+  text-align: center;
+}
+
+.mat-table {
+  box-shadow: none;
+}
+
+.no-data {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.edit {
+  background: #2f493f;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.edit,
+.delete :hover {
+  cursor: pointer;
+}
+
+.table-buttons {
+  display: flex;
+}

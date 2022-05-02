@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "vehicleapi",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/muharemagic/Desktop/vehicle-management-system/amplify/backend/api/vehicleapi/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
