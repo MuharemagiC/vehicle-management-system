@@ -1,27 +1,45 @@
-# VehicleManagementSystem
+## Table of contents
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Screenshot
 
-## Code scaffolding
+![](./src/assets/images/Screenshot.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Links
 
-## Build
+- Solution URL: [https://github.com/MuharemagiC/github-user-search-app.git](https://github.com/MuharemagiC/vehicle-management-system)
+- Live Site URL: [https://muharemagic.github.io/github-user-search-app/](https://muharemagic.github.io/github-user-search-app/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## My process
 
-## Running unit tests
+### Built with
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- CSS custom properties
+- SCSS
+- Flexbox
+- Mobile-first workflow
+- [Angular](https://angular.io/docs) - JS library
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [GraphQL](https://graphql.org/learn/)
+- [AWS](hhttps://docs.aws.amazon.com/)
 
-## Running end-to-end tests
+### What I learned
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+TThis is my first time working with Angular, GraphQL and AWS. This is a simple vehicle management system app. I learned the fundamentals of these technologies. Also I brush by skills in typescript and javascript.
 
-## Further help
+### Continued development
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For the future probably I will focus on all of three frontend frameworks and also I will improve my backend skills.
+
+## Author
+
+- Frontend Mentor - [@MuharemagiC](https://www.frontendmentor.io/profile/MuharemagiC)
