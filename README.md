@@ -30,11 +30,11 @@
 - [Angular](https://angular.io/docs) - JS library
 - [TypeScript](https://www.typescriptlang.org/) - Programming Language
 - [GraphQL](https://graphql.org/learn/)
-- [AWS](hhttps://docs.aws.amazon.com/)
+- [AWS](https://docs.aws.amazon.com/)
 
 ### What I learned
 
-TThis is my first time working with Angular, GraphQL and AWS. This is a simple vehicle management system app. I learned the fundamentals of these technologies. Also I brush by skills in typescript and javascript.
+This is my first time working with Angular, GraphQL and AWS. This is a simple vehicle management system app. I learned the fundamentals of these technologies. Also I brush by skills in typescript and javascript.
 
 ### Continued development
 
