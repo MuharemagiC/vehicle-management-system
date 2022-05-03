@@ -21,11 +21,10 @@ export class AuthService {
     });
   }
 
-  signIn(email: string, password: string): Promise<CognitoUser> {
+  signIn(email: string, password: string): Promise<any> {
     return new Promise((resolve, reject) => {
       Auth.signIn(email, password)
-        .then((user: CognitoUser) => {
-          this.loggedIn = true;
+        .then((user: any) => {
           resolve(user);
         })
         .catch((error: any) => reject(error));
@@ -41,5 +40,15 @@ export class AuthService {
       .catch((e) => {
         console.log(e);
       });
+  }
+
+  setNewPassword(user: any, password: string): Promise<any> {
+    return new Promise((resolve, reject) => {
+      Auth.completeNewPassword(user, password)
+        .then((user: any) => {
+          resolve(user);
+        })
+        .catch((error: any) => reject(error));
+    });
   }
 }

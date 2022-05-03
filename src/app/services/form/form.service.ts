@@ -121,4 +121,16 @@ export class FormService {
       vehicleName: [''],
     });
   }
+
+  getNewPasswordDefaultFormGroup(): FormGroup {
+    return new FormGroup({
+      newPassword: new FormControl(''),
+    });
+  }
+
+  getNewPasswordFormBuilder(): FormGroup {
+    return this.formBuilder.group({
+      newPassword: ['', [Validators.required, Validators.minLength(8)]],
+    });
+  }
 }

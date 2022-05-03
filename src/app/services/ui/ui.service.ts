@@ -9,6 +9,8 @@ export class UiService {
   private subject = new Subject<any>();
   private loadingForm: boolean = false;
   private subjectLoadingForm = new Subject<any>();
+  private newPasswordRequired: boolean = false;
+  private newPasswordRequiredSubject = new Subject<boolean>();
 
   constructor() {}
 
@@ -28,5 +30,14 @@ export class UiService {
 
   onUpdateLoadingForm(): Observable<boolean> {
     return this.subjectLoadingForm.asObservable();
+  }
+
+  updateNewPasswordRequired(): void {
+    this.newPasswordRequired = !this.newPasswordRequired;
+    this.newPasswordRequiredSubject.next(this.newPasswordRequired);
+  }
+
+  onNewPasswordRequiredUpdate(): Observable<boolean> {
+    return this.newPasswordRequiredSubject.asObservable();
   }
 }

@@ -11,13 +11,16 @@
     <mat-card-subtitle
       class="color-black font-exo__2 font-size__24 font-bold margin-top__20 card-title"
     >
-      Prijavi se
+      {{ newPasswordRequired ? "Novi Password" : "Prijavi se" }}
     </mat-card-subtitle>
     <mat-card-content class="color-gray font-exo__2 font-size__14">
-      <section class="text-center">
+      <section class="text-center" *ngIf="!newPasswordRequired">
         Da biste pristupili aplikaciji potrebno je da izvršite prijavu.
         <b>Ukoliko niste registrirani</b>, javite se nadređenom sa zahtjevom da
         vam se omogući pristup sistemu.
+      </section>
+      <section class="text-center" *ngIf="newPasswordRequired">
+        Postavi novi password
       </section>
       <app-login-form></app-login-form>
     </mat-card-content>
