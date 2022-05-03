@@ -17,7 +17,7 @@
 ### Links
 
 - Solution URL: [https://github.com/MuharemagiC/github-user-search-app.git](https://github.com/MuharemagiC/vehicle-management-system)
-- Live Site URL: [https://muharemagic.github.io/github-user-search-app/](https://main.d43768fcflm0m.amplifyapp.com/)
+- Live Site URL: [https://main.d43768fcflm0m.amplifyapp.com/](https://main.d43768fcflm0m.amplifyapp.com/)
 
 ## My process
 
