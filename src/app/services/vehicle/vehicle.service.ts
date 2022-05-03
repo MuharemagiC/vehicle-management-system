@@ -106,7 +106,6 @@ export class VehicleService implements OnDestroy {
     this.filtersSubscription = this.filterService
       .onFiltersChange()
       .subscribe((filters) => {
-        console.log(filters);
         this.fetchVehicle(filters);
       });
   }
